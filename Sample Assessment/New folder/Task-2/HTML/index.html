@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <div>
+                <i class="fa-solid fa-bars"></i>
+                <a class="navbar-brand">TO-DO</a>
+            </div>
+            <form class="d-flex" role="search">
+                <button type="button" class="btn mt-1" id="focus-btn"> 
+                    <i class="fa-solid fa-plus badge text-bg-secondary p-1 border border-2  text-white" style="cursor: pointer;"></i>
+                </button>
+                <button type="button" class="btn" id="refresh-btn"> 
+                    <i class="fa-solid fa-arrows-rotate  p-1" style="cursor: pointer;"></i>
+                </button>
+                <button type="button" class="btn" id="search-btn"> 
+                    <i class="fa-solid fa-magnifying-glass p-1" style="cursor: pointer;">
+
+                    </i></button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <section>
+            <div class="d-flex mt-5">
+
+                <input type="text" id="searchInpBtn" placeholder="Search" style="display: none; width: 100%;"  onkeyup="searchTask(this.value)">
+
+                <input type="text" class="form-control" id="input-text" placeholder="TaskName">
+
+                <input type="date" class="form-control ms-2" id="input-date">
+
+                <button type="button" class="btn btn-light text-black ms-2" id="add-task">
+                    <i class="fa-solid fa-check mt-2"  style="cursor: pointer;"></i>
+                </button>
+                    
+                <button type="button" class="btn btn-light text-black ms-2" id="clear-input">
+                    <i class="fa-solid fa-eraser mt-2" style="cursor: pointer;"></i>
+                </button>
+
+            </div>
+            <div class="d-flex">
+                <div id="error-msg" style="display: none; color: red; font-size: x-large;">Please Provide Input!</div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <div class="border border-2 border-secondary m-auto">
+                <h5 class="text-center p-2"><i class="fa-solid fa-bars"></i> Task List</h5>
+                <div id="task-list"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row mt-4 d-flex justify-content-between m-auto">
+                <div class="col-md-5 border border-2  border-secondary">
+                    <h6 class="text-center mt-1 p-2"> <i class="fa-solid fa-check"></i> Completed Tasks</h6>
+                    <div id="Completed-task"></div>
+                </div>
+                <div class="col-md-5  border border-2 border-secondary">
+                    <h6 class="text-center mt-1 p-2"> <i class="fa-solid fa-clock"></i> Old Tasks</h6>
+                    <div id="old-task"></div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-4">
+            <div class="border border-2 border-secondary text-center p-2">
+                <h6><i class="fa-solid fa-battery-full mt-4"></i> Progresss</h6>
+                <p class="text-muted">You have Completed <span id="progressValue">0%</span><i class="" id="progress"></i></p>
+            </div>
+        </section>
+    </div>
+    <script src="../JS/script.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+    <script src="./all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</body>
+
+</html>

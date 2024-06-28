@@ -1,0 +1,60 @@
+*{
+    font-family: "Montserrat",sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+.intro p,.card_Cont p{
+    color: #a39676;
+}
+h2,h3,h5{
+    color: #cea63e;
+}
+.company_Name h2{
+    color: #cea63e;
+    font-weight: 600;
+}
+.company_Name a{
+    font-weight: 400;
+    font-size: large;
+}
+.company_Name a.active{
+    color: #ffffff;
+    background-color: #cea63e;
+    border-radius: 10px;
+}
+.company_Name ul a:hover{
+    background-color: #cea63e;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.intro {
+    text-align: center;
+    margin: 5rem 0 5rem 0;
+}
+li{
+    list-style: none;
+    color: rgba(85,102,59,255);
+}
+.footer{
+    background-image: url(../Assets/Images/bg.png);
+    /* font-size: 1.5rem; */
+    color: rgb(234, 234, 234);
+}
+.footer h3{
+    color: #cea63e;
+}
+.footer li a{
+    color: #CCCC66;
+}
+#footer{
+    color: rgb(233, 230, 230);
+    font-size: medium;
+    font-weight: 100;
+}
+@media (max-width: 500px) { 
+    .nav>.img{
+        width: 150%;
+    }
+}

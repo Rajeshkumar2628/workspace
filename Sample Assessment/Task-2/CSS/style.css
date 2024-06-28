@@ -1,0 +1,9 @@
+body {
+    font-size: 20px;
+
+}
+#add-task,#clear-input{
+    background-color: #ffffff; 
+    border: #ffffff;
+    color: black;
+}

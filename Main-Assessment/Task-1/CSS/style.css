@@ -1,0 +1,49 @@
+*{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+#top{
+    background-image: url(../Assets/Images/bg_image.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    opacity: 70%;
+}
+div.hdr-text h2,div.hdr-text h5{
+    color: #000000;
+    font-size: xx-large;
+    font-weight: 900;
+    font-weight: bold;
+    opacity: 10;
+}
+.exp_btn{
+    width: 5%;height: 5%;
+    font-weight: bolder;
+}
+.c_btn .btn{
+    background-color: rgb(175, 172, 172);
+}
+.c_btn .btn .active{
+background-color: rgb(101, 147, 234);
+}
+.grid1{
+    line-height: 175%;
+}
+.grif-1_img{
+    background-image: url(../Assets/Images/grid1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grif-2_img{
+    background-image: url(../Assets/Images/gird-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid2{
+    line-height: 175%;
+}
+.copyright a{
+    text-decoration: none;
+}
